@@ -1,0 +1,266 @@
+s*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+
+
+nav.navegacion{
+    position: relative fixed;
+}
+
+.navegacion{
+    height: 63px;
+    z-index: 1030;
+    font-weight: normal;
+    text-align: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    margin: 0 auto;
+    background: #cb1514;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+#g2{
+    font-size: 25px;
+    text-align: left;
+}
+
+.menu > li{
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li.li a:hover{
+    background-color: #ffffff;
+    color: #ff0002;
+    transition: all 0.5s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #cb1514;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+/*Sub pàgina */
+
+.imgfondo{
+    width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.comparte{
+   padding-top: 30px;
+    text-align: center;
+	font-size: 30px;
+}
+.LineaSeparadora{
+color: darkgrey;
+    text-align: center;
+}
+/*INFO*/
+
+.titulo{
+	font-size: 30px;
+	text-align: center;
+
+}
+.sub_titulo{
+	font-size: 20px;
+}
+.info{
+	width: 880px;
+	margin-left: 250px;
+}
+.info p{
+	text-align: center;
+	text-align: justify;
+}
+.autor{
+	font-size: 15px;
+
+}
+.autor .redau{
+	font-size: 20px;
+	color: #cb1514;
+}
+.info img{
+	margin-left: 80px;
+	width: 700px;
+	border: 2px solid #cb1514;
+}
+#puntuacion{
+	display: inline-block;
+	width: 800px;
+	margin-left: 250px;
+	height: 400px;
+}
+#numero{
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	float: left;
+	background-image:  linear-gradient(to bottom right, #cb1514, #8a1111);
+	width: 300px;
+	height: 300px;
+}
+#numero .siete{
+
+	margin-top: 60px;
+	margin-left: 130px;
+	font-family:fantasy ;
+	position: absolute;
+	color: #ffffff;
+	text-align: center;
+	font-size: 100px;
+}
+#numero .clasi{
+	position: absolute;
+	font-size: 40px;
+	color: #ffffff;
+	margin-top: 180px;
+	margin-left: 40px;
+	font-family:fantasy ;
+}
+#detalles{
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	filter: brightness(60%);
+	float: right;
+	background-image: url(img/g3.jpg);
+	font-size: cover;
+	width: 500px;
+	height: 300px;
+}
+#lista{
+	margin-top: 10px;
+	position: absolute;
+	color: #ffffff;
+	margin-left: 320px;
+	width: 450px;
+}
+
+
+
+/*INICIO FOOTER*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+}
+.footer{
+	background-color: #313131;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ff0002;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
